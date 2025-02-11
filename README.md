@@ -40,4 +40,4 @@ NovaFusion requires **MacOS 13.0(Ventura) or later**.
 NovaFusion requires a **Intel** or a **Apple Silicon Chip** 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
-#### NovaFusion is the perfect companion for makers, home automation enthusiasts, and developers looking for an all-in-one IoT control solution!
+#### NovaFusion is the perfect companion for makers, home automation enthusiasts, and developers looking for an all-in-one IoT control solution! Stay Tuned for latest updates!!
