@@ -1,4 +1,5 @@
-# NovaFusion
+# NovaFusion        
+###### V1.0
 NovaFusion is a IoT app for Arduino and ESP32.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 NovaFusion is an intelligent macOS IoT application designed to seamlessly control and monitor your connected devices. Whether you're adjusting LED brightness, customizing vibrant NeoPixel lighting, or keeping track of ambient conditions, NovaFusion provides an intuitive and powerful dashboard for your IoT setup.
@@ -16,7 +17,36 @@ NovaFusion is an intelligent macOS IoT application designed to seamlessly contro
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### 🟠 Get started
 
-To get started with **NovaFusion** first **read this whole ReadMe file** to check if your **laptop and board are compatible with NovaFusion**. After that, if your laptop and board are compatible with NovaFusion you will have to **download the app** from the **downloads section at the bottom of this ReadMe file**. Next download the **Arduino or ESP32** code and upload it to the board using **Arduino IDE**, get the code also from the downloads section below. Followed by that you will have to download the text file also from the download section below, in this file will be the **guide for setting up your IoT project and components**.
+To get started with **NovaFusion** first **read this whole ReadMe file** to check if your **laptop and board are compatible with NovaFusion**. After that, if your laptop and board are compatible with NovaFusion you will have to **download the app** from the **releases section**. Next download the **Arduino or ESP32** code package and upload it to the board using **Arduino IDE**, get the code also from the downloads section below. Followed by that you will have to download the text file also from the download section below, in this file will be the **guide for setting up your IoT project and components**.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## ⚠️ IMPORTANT (Please read this before proceeding to the next step) ⚠️
+If you're using an Arduino board, especially the Arduino Uno R4 WiFi, make sure to use a 1KΩ resistor or higher when connecting an LED diode.
+
+Using a lower resistance resistor ****(e.g., 470Ω or less)**** may exceed the board’s safe current limits, potentially ****damaging the I/O pin or the microcontroller itself.****
+
+Why is this important?
+
+The ****Arduino Uno R4 WiFi**** can ****safely provide up to 8mA per GPIO pin.****
+****A typical LED can draw 16mA - 20mA****, which is ****more than double the safe limit if no proper resistor is used.****
+Using a ****higher resistor value (e.g., 1KΩ or more) reduces the current and increases your board’s lifespan.****
+******This precaution is recommended for all Arduino & ESP32 boards to prevent damage and ensure long-term stability.*******
+
+## ⚠️ ********Disclaimer: We are not responsible for any damages to your board or components. By following this guide, you acknowledge that improper wiring or resistor selection may cause damage, and you take full responsibility for your hardware.⚠️********
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+### 🔴 Libraries required for the arduino code
+
+For your code to work you need to download these libraries:
+#### Arduino
+1. WiFiS3
+2. Adafruit Neopixel
+3. DHT
+#### ESP32
+1. WiFi
+2. Adafruit Neopixel
+3. DHT
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -32,7 +62,8 @@ To get started with **NovaFusion** first **read this whole ReadMe file** to chec
 5. ESP32-Mini
 6. ESP32-DevKit V1
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+_______________________________________________________________________________________________________________________________________________________________
+
 ### 🔵 Mac Compatibility
 #### MacOS
 NovaFusion requires **MacOS 13.0(Ventura) or later**.
