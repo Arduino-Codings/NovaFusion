@@ -17,7 +17,31 @@ NovaFusion is an intelligent macOS IoT application designed to seamlessly contro
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### 🟠 Get started
 
-To get started with **NovaFusion** first **read this whole ReadMe file** to check if your **laptop and board are compatible with NovaFusion**. After that, if your laptop and board are compatible with NovaFusion you will have to **download the app** from the **releases section**. Next download the **Arduino or ESP32** code package and upload it to the board using **Arduino IDE**, get the code also from the downloads section below. Followed by that you will have to download the text file also from the download section below, in this file will be the **guide for setting up your IoT project and components**.
+Before using NovaFusion, follow these steps to ensure compatibility and a smooth setup:
+
+1️⃣ **Check Compatibility**
+Read this entire README file to verify that your laptop and board are compatible with NovaFusion.
+If your device is compatible, proceed to the next step.
+
+2️⃣ **Download the NovaFusion App**
+Go to the Releases section on GitHub and download the latest version of the NovaFusion app.
+After downloading, open the .dmg file and drag NovaFusion.app into the Applications folder.
+
+3️⃣ **Allow NovaFusion to Run (Mac Users Only)**
+Since NovaFusion is not signed by an identified Apple developer, macOS will block it by default. To allow it:
+Open System Settings → Privacy & Security.
+Scroll to the bottom and find the message:
+***"NovaFusion was blocked from use because it is not from an identified developer."
+Click Open Anyway to allow the app to run.***
+
+4️⃣ **Upload Code to Your Board**
+Download the Arduino or ESP32 code package from the Downloads section below.
+Open Arduino IDE and upload the code to your board.
+
+5️⃣ **Follow the Setup Guide**
+Download the setup guide text file from the Downloads section.
+This file contains step-by-step instructions for setting up your IoT project and hardware components.
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -51,10 +75,10 @@ For your code to work you need to download these libraries:
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 🟡 Supported Boards:
-#### Arduino
+#### Arduino (Download Arduino Package for Arduino)
 1. Arduino Uno R4 WiFi
 2. Arduino MKR WiFi 1010
-#### ESP32
+#### ESP32 (Download ESP32 Package for ESP32)
 1. ESP32-WROOM-32
 2. ESP32-WROVER
 3. ESP32-S3
